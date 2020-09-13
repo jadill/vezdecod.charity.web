@@ -1,0 +1,14 @@
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.inactiveText {
+    text-align: center;
+    color: var(--attach_picker_tab_inactive_text);
+}

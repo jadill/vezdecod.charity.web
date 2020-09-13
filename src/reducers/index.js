@@ -1,7 +1,8 @@
 import {combineReducers} from 'redux';
 
-import PanelReduxReducer from "./panel";
+import panel from "./panel";
+import fee from "./fee";
 
-const rootReducer = combineReducers({PanelReduxReducer});
+const rootReducer = combineReducers({panel, fee});
 
 export default rootReducer;

@@ -11,6 +11,9 @@ import TargetFee from "./../TargetFee/TargetFee";
 import RegularFee from "./../RegularFee/RegularFee";
 import {CREATE_FEE, REGISTRATION_FEE, REGULAR_FEE, TARGET_FEE, TYPE_OF_FEE} from "./../../constants/common";
 import RegistrationFee from "../RegistrationFee/RegistrationFee";
+import {POSTING_FEE, VIEW_FEE} from "../../constants/common";
+import PostingFee from "../PostingFee/PostingFee";
+import ViewFee from "../ViewFee/ViewFee";
 
 const CharityRouter = ({activePanel}) => {
     return (
@@ -30,12 +33,18 @@ const CharityRouter = ({activePanel}) => {
             <Panel id={REGISTRATION_FEE}>
                 <RegistrationFee/>
             </Panel>
+            <Panel id={POSTING_FEE}>
+                <PostingFee/>
+            </Panel>
+            <Panel id={VIEW_FEE}>
+                <ViewFee/>
+            </Panel>
         </View>
     )
 }
 
 export default connect(state => ({
-    activePanel: state.PanelReduxReducer.active_panel,
+    activePanel: state.panel.active_panel,
 }))(CharityRouter);
 
 registerServiceWorker();

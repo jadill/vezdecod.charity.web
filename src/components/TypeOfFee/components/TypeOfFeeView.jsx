@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Cell, Headline, Subhead} from "@vkontakte/vkui";
 
-import './../../../index.css'
+import '../../../index.scss'
 import {connect} from "react-redux";
 import {setActivePanel} from "../../../actions/actionCreator";
 

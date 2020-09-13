@@ -3,7 +3,7 @@ import {
     CREATE_FEE,
 } from '../constants/common';
 
-const PanelReduxReducer = (state = {active_panel:CREATE_FEE}, {type, active_panel,}) => {
+const panel = (state = {active_panel:CREATE_FEE}, {type, active_panel,}) => {
     switch (type) {
         case SET_ACTIVE_PANEL:
             return {
@@ -14,4 +14,4 @@ const PanelReduxReducer = (state = {active_panel:CREATE_FEE}, {type, active_pane
     }
 };
 
-export default PanelReduxReducer;
+export default panel;

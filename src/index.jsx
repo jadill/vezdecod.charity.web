@@ -3,22 +3,30 @@ import ReactDOM from 'react-dom';
 
 import registerServiceWorker from './registerServiceWorker';
 
-import { View, Panel, PanelHeader, Header, Group, Cell } from '@vkontakte/vkui';
+import {Panel, Root, View} from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
+import CreateFee from "./components/CreateFee/CreateFee";
+import TypeOfFee from "./components/TypeOfFee/TypeOfFee";
+import TargetFee from "./components/TargetFee/TargetFee";
+import RegularFee from "./components/RegularFee/RegularFee";
 
 ReactDOM.render((
-    // <BrowserRouter>
-    //     <PageRouter/>
-    // </BrowserRouter>
-    <View activePanel="main">
-        <Panel id="main">
-            <PanelHeader>VKUI</PanelHeader>
-            <Group header={<Header mode="secondary">Items</Header>}>
-                <Cell>Hello</Cell>
-                <Cell>World</Cell>
-            </Group>
-        </Panel>
-    </View>
+    <Root activeView="main">
+        <View id="main" activePanel="create-fee">
+            <Panel id="create-fee">
+                <CreateFee/>
+            </Panel>
+            <Panel id="type-of-fee">
+                <TypeOfFee/>
+            </Panel>
+            <Panel id="target-fee">
+                <TargetFee/>
+            </Panel>
+            <Panel id="regular-fee">
+                <RegularFee/>
+            </Panel>
+        </View>
+    </Root>
 ), document.getElementById('root'));
 
 registerServiceWorker();

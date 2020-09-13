@@ -9,7 +9,8 @@ import CreateFee from "./../CreateFee/CreateFee";
 import TypeOfFee from "./../TypeOfFee/TypeOfFee";
 import TargetFee from "./../TargetFee/TargetFee";
 import RegularFee from "./../RegularFee/RegularFee";
-import {CREATE_FEE, REGULAR_FEE, TARGET_FEE, TYPE_OF_FEE} from "./../../constants/common";
+import {CREATE_FEE, REGISTRATION_FEE, REGULAR_FEE, TARGET_FEE, TYPE_OF_FEE} from "./../../constants/common";
+import RegistrationFee from "../RegistrationFee/RegistrationFee";
 
 const CharityRouter = ({activePanel}) => {
     return (
@@ -25,6 +26,9 @@ const CharityRouter = ({activePanel}) => {
             </Panel>
             <Panel id={REGULAR_FEE}>
                 <RegularFee/>
+            </Panel>
+            <Panel id={REGISTRATION_FEE}>
+                <RegistrationFee/>
             </Panel>
         </View>
     )

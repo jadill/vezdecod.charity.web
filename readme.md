@@ -1,5 +1,9 @@
 # Вездекод, 7 день. Пожертвования.Веб
 
+## Ссылки
+* WEB [https://miniapps.jadill.ru](https://miniapps.jadill.ru)
+* MiniApps [https://vk.com/app7595694](https://vk.com/app7595694)
+
 ## Использованные технологии
 * react.js
 * redux
